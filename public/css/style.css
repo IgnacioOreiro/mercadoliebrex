@@ -1,0 +1,447 @@
+*{
+    font-family: var(--base-font-family);
+    margin: 0px;
+    padding: 0px;
+    list-style: none
+}
+
+:root {
+    --yellow: #EAC926;
+    --dark-blue: #03264C;
+    --light-blue: #1259c3;
+    --gray: #666666;
+    --light-gray: #ebebeb;
+    --green: #39b54a;
+    --base-font-family: 'Roboto', sans-serif
+}
+/* etiquetas nativas */
+a{
+    text-decoration: none;
+    color: black;
+}
+main {
+    text-align: center;
+    background-color: var(--light-gray);
+}
+
+/*  clases en movil y general */
+.header {
+    background-color: var(--yellow);
+}
+.header-img-ml {
+    width: 100%;
+}
+
+div.burger-menu {
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+div.burger-menu i {
+    color: white;
+    background-color: var(--dark-blue);
+    padding: 10px;
+    margin: auto;
+    border-radius: 6px;
+    font-size: 25px;
+}
+
+.form-search{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.ayuda {
+    padding-bottom: 25px;
+}
+
+.com-cuo {
+    padding-top: 8px;
+    padding-left: 5px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.footer-creditcard {
+    text-align: center;
+}
+
+.footer-shipping {
+    text-align: center;
+}
+
+.footer-assured {
+    text-align: center;
+}
+
+.footer-copy {
+    font-size: 8px;
+    margin-top: 35px;
+    width: 265px;
+    color: var(--gray);
+}
+
+.icon-creditcard {
+    color: var(--light-blue);
+    font-size: 40px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.icon-shipping {
+    color: var(--light-blue);
+    font-size: 40px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.icon-shield {
+    color: var(--light-blue);
+    font-size: 40px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+/* cards config */
+.prod-ult-vis-card {
+    border: solid 1px #666;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 60px;
+    
+}
+
+
+.card-info{
+    border-top-width: 1px #666666;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card-info i{
+    display: block;
+    font-size: 17px;
+    padding: 7px;
+    width: 23px;
+    height: 20px;
+    border: 1px solid var(--green);
+    background-color: #FFF;
+    border-radius: 79%;
+    position: relative;
+    right: -317px;
+    top: -30px;
+    color: #39b54a;
+    transition: transform 750ms;
+}
+
+
+
+.card-info i:hover{
+    transform: rotate(-90deg);
+}
+
+.card-img img {
+    width: 99.5%;
+}
+
+.prod-ult-vis-card h2 {
+    padding: 12px;
+}
+
+.prod-ult-vis-card  {
+    padding: 4px 0 4px 0;
+    margin-left: 16px;
+}
+
+
+.prod-ult-vis-card p {
+    padding: 4px 0 6px 0;
+    margin-left: 16px;
+    color: var(--green);
+}
+
+/* fin card config */
+
+
+
+.nav-items {
+    display: none;
+}
+
+.card-info-price-ofert-description{
+    display: none;
+}
+
+
+.banner img {
+    width: 100%;
+}
+
+
+/* MEDIA CUERIS */
+
+
+@media(min-width: 960px) {
+    /* header tablet */
+    .header{
+        height: 207;
+        
+    }
+    .header-img-ml{
+        width: 30%;
+    }
+    .form-search{
+        z-index: 10;
+        width: 35%;
+        position: relative;
+        left: 317px;
+        bottom: 59px;
+    }
+    .com-cuo{
+        width: 30%;
+        position: relative;
+        left: 664px;
+        bottom: 100px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .nav-items {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-links-left{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-links-left li{
+        margin: 7px; 
+    }
+
+    .nav-links-right{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-links-right li{
+        margin: 7px; 
+    }
+    /* fin header tablet */
+    
+    /* cards tablet */
+    .ultima-visita{
+        display: flex;
+    }
+    .ultima-visita-title {
+        display: block;
+        display: block;
+        margin: -4px;
+        padding: 36px;
+    }
+
+    .ofertas{
+        display: flex;
+    }
+
+    .prod-ult-vis-card {
+        border: solid 1px #666;
+        margin-right: 1%;
+        margin-left: 1%;
+        margin-bottom: 60px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .card-info{
+        border-top-width: 1px #666666;
+        display: flex;
+        padding-top: 11px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card-info i {
+        display: block;
+        font-size: 17px;
+        padding: 7px;
+        width: 23px;
+        height: 20px;
+        border: 1px solid var(--green);
+        background-color: #FFF;
+        border-radius: 79%;
+        position: relative;
+        right: -167px;
+        top: -38px;
+        color: #39b54a;
+        transition: transform 750ms;
+    }
+
+    /* fin cards tablet */
+}
+
+@media(min-width: 1600px) {
+
+    .header-img-ml{
+        width: 30%;
+    }
+    .form-search{
+        z-index: 10;
+        width: 49%;
+        position: relative;
+        left: 430px;
+        bottom: 54px;
+        font-size: 30px;
+    }    
+
+    .form-search-input{
+        font-size: 35px;
+    }
+    .form-search-input-button{
+        font-size:  30px; 
+    }
+
+    .com-cuo{
+        width: 45%;
+        position: relative;
+        left: 1044px;
+        bottom: 100px;
+        font-size: 30px;
+    }
+
+
+
+    .burger-menu{
+        display: none;
+    }
+    .nav-items {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-links-left{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-links-left li{
+        margin: 16px; 
+        font-size: 25px;
+    }
+
+    .nav-links-right{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-links-right li{
+        margin: 16px; 
+        font-size: 25px;
+    }
+
+
+    .footer{
+        display: flex;
+    }
+    .footer-copy{
+        margin-left: 20px;
+    }
+    .icon-shield i{ 
+        transition: color var(--green);
+    }
+    .icon-shield i:hover{
+        transition: color var(--green);
+    }
+
+    .card-info i {
+        display: block;
+        font-size: 17px;
+        padding: 7px;
+        width: 23px;
+        height: 20px;
+        border: 1px solid var(--green);
+        background-color: #FFF;
+        border-radius: 79%;
+        position: relative;
+        right: -273px;
+        top: -38px;
+        color: #39b54a;
+        transition: transform 750ms;
+    }
+
+}
+
+
+
+
+
+
+
+/* Registro */
+
+.register-forms-body {
+    background-color: var(--light-gray);
+}
+
+.forms-data-titles {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.forms-userData-inputs {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    width: 350px;
+    height: 30px;
+    border-radius: 7px;
+}
+
+.forms-userData-inputs::placeholder {
+    margin-left: 50px;
+}
+
+
+.forms-birthData-inputs {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    width: 350px;
+    height: 30px;
+    border-radius: 7px;
+}
+
+.forms-userProfile-HTZL-radio-imputs {
+    display: flex;
+}
+
+.forms-userProfile-label {
+    display: flex;
+    margin-left: 20px;
+    border-radius: 7px;
+}
+
+.forms-userProfile-inputs {
+    display: flex;
+    margin-left: 15px;
+    border-radius: 7px;
+}
+
+.forms-intereses-inputs-aling {
+    white-space: nowrap;
+    margin-top: 40px;
+    margin-right: 300px;
+}
+
+.forms-intereses-inputs {
+    vertical-align: top;
+    display: inline-block
+}
+
+.forms-intereses-inputs-label {
+    white-space: normal;
+    display: inline-block;
+}
+
+/* fin registro */ 
