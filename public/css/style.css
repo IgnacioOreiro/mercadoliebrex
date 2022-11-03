@@ -19,7 +19,11 @@ a{
     text-decoration: none;
     color: black;
 }
-main {
+body{
+    background-color: var(--light-gray);
+}
+
+main{
     text-align: center;
     background-color: var(--light-gray);
 }
@@ -161,6 +165,23 @@ div.burger-menu i {
     margin-left: 16px;
     color: var(--green);
 }
+
+
+.button{
+    align-items: center;
+    background-color: #1900ff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5%;
+    width: 51%;
+} 
 
 /* fin card config */
 
@@ -389,11 +410,12 @@ div.burger-menu i {
 
 .forms-userData-inputs {
     display: flex;
-    margin-top: 20px;
-    margin-left: 15px;
-    margin-bottom: 10px;
-    width: 350px;
-    height: 30px;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 24%;
+    margin-bottom: 71px;
+    width: 448px;
+    height: 29px;
     border-radius: 7px;
 }
 
